@@ -1,0 +1,29 @@
+# Notas escolares
+# < 4 aluno reprovado 
+# > 6 aluno aprovado direto 
+# 4 and 6 aluno em recuperação 
+# < 5 reprovado na recuperação 
+# > 5 aprovado na recuperação 
+
+NOTA1 = int(input("Digite a nota 1: "))
+NOTA2 = int(input("Digite a nota 2: "))
+NOTA3 = int(input("Digite a nota 3: "))
+NOTA4 = int(input("Digite a nota 3: "))
+MÉDIA = (NOTA1 + NOTA2 + NOTA3 + NOTA4) / 4
+
+print(f"Sua média é {MÉDIA}.")
+print(type(MÉDIA))
+
+if MÉDIA >= 6:
+    print("Aprovado!")
+elif MÉDIA < 4:
+    print("Reprovado!")
+else:
+    NOTA5 = int(input("Digite a nota da recuperação: "))
+    print("Recuperação...")
+    if NOTA5 >=5:
+        print("Aprovado na recuperação!")
+    if NOTA5 < 5:
+        print("Reprovado na recuperação...")
+                         
+    
