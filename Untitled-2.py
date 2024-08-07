@@ -1,25 +1,32 @@
-print("Digite o número referente ao dia da semana")
-print("1. Domingo")
-print("2. Segunda")
-print("3. Terça")
-print("4. Quarta")
-print("5. Quinta")
-print("6. Sexta")
-print("7. Sábado")
-semana = int(input())
+# Demonstração do uso de funções...
+def ADICAO(X, Y):
+    return X + Y
+    return W
+def SUBTRACAO(X, Y):
+    return X - Y
+def MULTIPLICAÇÃO(X, Y):
+    return X * Y
+def DIVISAO(X, Y):
+    return X / Y 
 
-match semana:
-    case 1: 
-        print("Aos domingos, te recomendamos ir à feira.")
-    case 2: 
-        print("Às segundas, te recomendamos caminhar e praticar exercícios para começar a semana com energia")
-    case 3: 
-        print("Às terças, te recomendamos ir ao museu.")
-    case 4:
-        print("Às quartas, te recomendamos ir ao cinema")
-    case 5:
-        print("Às quintas, te recomendamos ir ao parque olímpico")
-    case 6: 
-        print("Às sextas, te recomendamos ir em algum evento cultural")
-    case 7:
-        print("Aos sábados, te recomendamos ir ao mercadão")
+print("Digite dois valores inteiros...")
+N1 = int(input("X: "))
+N2 = int(input("Y: "))
+OP = input("Qual operação (+, -, * ou /)?")
+
+if OP == "+":
+    Z = ADICAO(N1, N2)
+    print("Resultado da soma:", Z)
+elif OP == "-":
+    Z = SUBTRACAO(N1, N2)
+    print("Resultado da subtração:", Z)
+elif OP ==  "*":
+    Z = MULTIPLICAÇÃO(N1, N2)
+    print("O resultado da multiplicação:", Z)
+elif OP == "/":
+    Z = DIVISAO(N1, N2)
+    print("O resultado da divisão:", Z)
+else:
+    print("Opção digitada inexistente!")
+    
+    
