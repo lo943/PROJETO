@@ -1,0 +1,13 @@
+# Cadastro de Usuário
+print("Estamos prontos para realizar o seu cadastro")
+NOME = input("Digite seu nome completo:")
+GENERO = input("Digite seu Genero (Masculino/Feminino/Outro):")
+IDADE = int(input("Digite sua idade:"))
+ENDERECO = input("Digite seu endereço:")
+
+if GENERO == "Masculino":
+     print("Parabéns, seu cadrastro foi realizado com sucesso. Seja Bem-vindo para realizar suas compras com desconto")
+if GENERO == "Feminino":
+    print("Parabéns, seu cadastro foi realizado com sucesso. Seja bem-vinda para realizar suas compras com desconto")
+else:
+    print("Parabéns, seu cadastro foi realizado com sucesso. Seja bem-vinde para realizar suas compras com sucesso")
